@@ -167,7 +167,7 @@ def get_my_odds(hand, flop, print_odds=False):
 
 
 class testCases(unittest.TestCase):
-    def testIsPair(self):
+    def test_is_pair(self):
         # Test a real pair.
         hand = [(1, 'H'), (13, 'S')]
         flop = [(2, 'C'), (6, 'S'), (1, 'S'), (5, 'D')]
@@ -193,7 +193,7 @@ class testCases(unittest.TestCase):
         flop = [(2, 'C'), (6, 'S'), (3, 'S'), (5, 'D')]
         self.assertFalse(is_pair(hand + flop))
 
-    def testIsTriple(self):
+    def test_is_triple(self):
         # Test a real pair.
         hand = [(1, 'H'), (13, 'S')]
         flop = [(2, 'C'), (6, 'S'), (1, 'S'), (5, 'D')]
@@ -219,7 +219,7 @@ class testCases(unittest.TestCase):
         flop = [(2, 'C'), (6, 'S'), (3, 'S'), (5, 'D')]
         self.assertFalse(is_triple(hand + flop))
 
-    def testIsQuad(self):
+    def test_is_quad(self):
         # Test a real pair.
         hand = [(1, 'H'), (13, 'S')]
         flop = [(2, 'C'), (6, 'S'), (1, 'S'), (5, 'D')]
@@ -245,7 +245,7 @@ class testCases(unittest.TestCase):
         flop = [(2, 'C'), (6, 'S'), (3, 'S'), (5, 'D')]
         self.assertFalse(is_quad(hand + flop))
 
-    def testIsTwoPair(self):
+    def test_is_two_pair(self):
         # Test a real pair.
         hand = [(1, 'H'), (13, 'S')]
         flop = [(2, 'C'), (6, 'S'), (1, 'S'), (5, 'D')]
